@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Attendance System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-gradient-to-br from-green-400 via-emerald-200 to-green-100 font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 bg-white/30 backdrop-blur-lg shadow-lg z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-green-800">🌱 Smart Attendance</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-green-800 font-medium">About</a>
+        <a href="#features" class="hover:text-green-800 font-medium">Features</a>
+        <a href="#workflow" class="hover:text-green-800 font-medium">Workflow</a>
+        <a href="#dashboard" class="hover:text-green-800 font-medium">Demo</a>
+        <a href="#contact" class="hover:text-green-800 font-medium">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <div class="absolute inset-0 bg-gradient-to-r from-green-600 via-green-500 to-green-400 opacity-90"></div>
+    <div class="relative z-10 text-white">
+      <h2 class="text-6xl md:text-7xl font-extrabold animate-bounce drop-shadow-lg">
+        Automated Attendance System
+      </h2>
+      <p class="mt-6 max-w-2xl text-lg md:text-xl mx-auto">
+        Transforming rural education with smart, offline-ready, and eco-friendly attendance tracking.
+      </p>
+      <button class="mt-8 px-8 py-3 bg-white text-green-700 font-bold rounded-full shadow-xl hover:scale-105 transition">
+        🚀 Explore Now
+      </button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto py-20 px-6 text-center">
+    <h3 class="text-4xl font-bold text-green-700 mb-8">🌍 About the Project</h3>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto bg-white/50 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+      Rural schools face challenges with manual attendance, internet connectivity, and electricity supply.  
+      This system uses **RFID, Biometric, or Face Recognition** and works even in **offline mode**, syncing later when internet is available.  
+      It is **low-cost, solar-powered, and secure** – perfect for rural environments.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 bg-gradient-to-r from-green-50 to-green-100">
+    <h3 class="text-4xl font-bold text-center text-green-700 mb-12">✨ Key Features</h3>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+      <div class="p-8 bg-white/70 backdrop-blur-md rounded-2xl shadow-xl hover:scale-105 transition text-center">
+        <i class="ph ph-wifi-slash text-6xl text-green-700"></i>
+        <h4 class="font-bold text-2xl mt-4">Offline Mode</h4>
+        <p class="mt-2">Attendance is stored locally and syncs when internet is available.</p>
+      </div>
+      <div class="p-8 bg-white/70 backdrop-blur-md rounded-2xl shadow-xl hover:scale-105 transition text-center">
+        <i class="ph ph-coins text-6xl text-green-700"></i>
+        <h4 class="font-bold text-2xl mt-4">Low Cost</h4>
+        <p class="mt-2">Uses ESP32, RFID, and solar power – affordable for rural schools.</p>
+      </div>
+      <div class="p-8 bg-white/70 backdrop-blur-md rounded-2xl shadow-xl hover:scale-105 transition text-center">
+        <i class="ph ph-lock text-6xl text-green-700"></i>
+        <h4 class="font-bold text-2xl mt-4">Secure</h4>
+        <p class="mt-2">Biometric and RFID-based authentication ensures accuracy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow -->
+  <section id="workflow" class="py-20 px-6 max-w-6xl mx-auto">
+    <h3 class="text-4xl font-bold text-center text-green-700 mb-12">📊 How It Works</h3>
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="p-6 bg-white/70 backdrop-blur-md rounded-2xl shadow-lg">
+        <i class="ph ph-identification-badge text-5xl text-green-700"></i>
+        <h4 class="font-bold text-xl mt-3">1. Scan</h4>
+        <p>Student uses RFID / Fingerprint / Face Recognition.</p>
+      </div>
+      <div class="p-6 bg-white/70 backdrop-blur-md rounded-2xl shadow-lg">
+        <i class="ph ph-database text-5xl text-green-700"></i>
+        <h4 class="font-bold text-xl mt-3">2. Local Save</h4>
+        <p>Attendance is stored in the local device.</p>
+      </div>
+      <div class="p-6 bg-white/70 backdrop-blur-md rounded-2xl shadow-lg">
+        <i class="ph ph-cloud-arrow-up text-5xl text-green-700"></i>
+        <h4 class="font-bold text-xl mt-3">3. Cloud Sync</h4>
+        <p>Data syncs to cloud when internet is available.</p>
+      </div>
+      <div class="p-6 bg-white/70 backdrop-blur-md rounded-2xl shadow-lg">
+        <i class="ph ph-chalkboard-teacher text-5xl text-green-700"></i>
+        <h4 class="font-bold text-xl mt-3">4. Dashboard</h4>
+        <p>Teachers view reports via dashboard or app.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Demo -->
+  <section id="dashboard" class="py-20 bg-gradient-to-r from-green-50 to-green-100 text-center">
+    <h3 class="text-4xl font-bold text-green-700 mb-8">📋 Demo Dashboard</h3>
+    <div class="max-w-3xl mx-auto bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-6 overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="bg-green-700 text-white">
+            <th class="p-3">Student Name</th>
+            <th class="p-3">Class</th>
+            <th class="p-3">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="p-3">Ravi Kumar</td>
+            <td class="p-3">Class 5</td>
+            <td class="p-3 text-green-700 font-bold">✔ Present</td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-3">Meena Sharma</td>
+            <td class="p-3">Class 6</td>
+            <td class="p-3 text-red-600 font-bold">✘ Absent</td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-3">Amit Verma</td>
+            <td class="p-3">Class 7</td>
+            <td class="p-3 text-green-700 font-bold">✔ Present</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 text-center bg-gradient-to-r from-green-600 to-green-400 text-white">
+    <h3 class="text-4xl font-bold mb-6">📩 Contact Us</h3>
+    <p class="mb-4">For collaboration or queries, reach out:</p>
+    <a href="mailto:info@smartattendance.com" class="bg-white text-green-700 px-6 py-2 rounded-full font-bold shadow hover:scale-105 transition">
+      info@smartattendance.com
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6 text-center">
+    <p>&copy; 2025 Smart Attendance | Designed for Rural Schools</p>
+  </footer>
+
+</body>
+</html>
